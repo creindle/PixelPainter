@@ -41,13 +41,17 @@ function createGrid(rows, columns, attributes) {
   setEventHandlers();
 
   function setEventHandlers(){
-    gridElement.forEach(function(x){
+    Array.prototype.forEach.call(gridElement, function(x){
       document.getElementById("pixelPainter").addEventListener('click', changeColor);
     });
   }
 
 
   //document.getElementById("pixelPainter").addEventListener("click", changeColor);
+
+  function beforeColor(){
+    document.currentTarget.style.backgroundColor = "red";
+  }
 
   function changeColor() {
     document.currentTarget.style.backgroundColor = "purple";
