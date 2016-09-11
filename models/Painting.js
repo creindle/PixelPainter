@@ -3,7 +3,11 @@ const mongoose = require('mongoose');
 const Painting = mongoose.model(
   'Painting',
   {
-    colors: String
+    canvas: [[String]],
+    pallet: {
+      colors: [String],
+      selected: String
+    }
   });
 
 module.exports = Painting;

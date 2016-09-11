@@ -46,7 +46,6 @@ function createGrid(rows, columns, attributes) {
     });
   }
 
-
   //document.getElementById("pixelPainter").addEventListener("click", changeColor);
 
   function beforeColor(){
@@ -55,7 +54,6 @@ function createGrid(rows, columns, attributes) {
 
   function changeColor() {
     document.currentTarget.style.backgroundColor = "purple";
-
   }
 
   console.log(gridElement);
